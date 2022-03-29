@@ -8,7 +8,7 @@ The NI GPIB-ENET uses the obsolete **Reverse-ARP(RARP)** protocol for setting up
 The protocol works on Layer 2 (Data link layer), which means we cannot read/write the raw packets via Python3's builtin module `socket` on Windows. But it's doable on Linux. Please refer to https://www.cloudshark.org/captures/c6729d0fc558 for the details of the RARP request/reply packets.
 
 #### Example RARP reply packet
-Just an example, in my case
+For example, in my case
 
 | Item  | MAC Addr | IP | IP(hex) |
 | ------------- | ------------- | ------------- | ------------- |
