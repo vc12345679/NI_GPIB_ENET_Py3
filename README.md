@@ -5,9 +5,9 @@ Python3 scripts to set up and communicate with the obsolete NI GPIB-ENET (not GP
 ## Set up IP address
 
 The NI GPIB-ENET uses the obsolete **Reverse-ARP(RARP)** protocol for setting up the IP address (when switch-5 is **OFF**).
-The protocol works on Layer 2 (Data link layer), which means we cannot read/write the raw packets via Python3's builtin module `socket` on Windows. But it's doable on Linux. Please refer to https://www.cloudshark.org/captures/c6729d0fc558 for the details of the request/reply packets.
+The protocol works on Layer 2 (Data link layer), which means we cannot read/write the raw packets via Python3's builtin module `socket` on Windows. But it's doable on Linux. Please refer to https://www.cloudshark.org/captures/c6729d0fc558 for the details of the RARP request/reply packets.
 
-#### Example raw packets
+#### Example RARP reply packet
 Just an example, in my case
 
 | Item  | MAC Addr | IP | IP(hex) |
