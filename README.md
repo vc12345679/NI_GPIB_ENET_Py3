@@ -63,5 +63,5 @@ print(dev.query(b'*IDN?').encode())
 # KEITHLEY INSTRUMENTS INC.,MODEL 2010,0772543,A10  /A02
 ```
 
-The scripts have met my needs so far, so I have no motivation to improve them any more.
+The scripts have met my needs, so I lost the motivation for further improvement.
 But you are more than welcome to fork/modify it.
